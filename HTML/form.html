@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>employee register form</title>
+    </head>
+    <body>
+
+
+        
+        <h2>signup form for employee</h2>
+
+
+        <form action="" method="get">
+            
+            
+            <fieldset>
+
+                <legend>employee information</legend>
+
+                <label for="ename">employee name</label>
+                <input type="text" placeholder="enter your name" id="ename" name="ename" value="" required>         <br> <br>
+                
+                <label for="phno">phone number</label>
+                <input type="tel" placeholder="enter your phone number" id="phno" name="phno" maxlength="4" readonly value="1234">         <br> <br>
+                
+                <label for="pass">enter password</label>
+                <input type="password" placeholder="enter your password" id="pass" name="epass" minlength="5">           <br><br>
+
+                <label for="age">employee age</label>
+                <input type="number" name="age" id="age" placeholder="enter your age" disabled>  <br><br>
+
+                <label for="email">employee email</label>
+                <input type="email" name="email" id="email" placeholder="enter your email">  <br><br>
+
+                <label for="">Subjects</label> <br>
+
+                <label for="sub1">HTML</label>
+                 <input type="checkbox" name="sub1" id="sub1" value="html">
+
+                <label for="sub2">CSS</label>
+                <input type="checkbox" name="sub2" id="sub2" value="css">
+
+                <label for="sub3">JAVASCRIPT</label>
+                <input type="checkbox" name="sub3" id="sub3" value="js">    <br><br>
+
+
+                <label for="">Select Gender</label> <br>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+
+                <label for="others">Others</label>
+                <input type="radio" name="gender" id="others" value="others">     <br><br>
+
+
+                <label for="address">enter your address</label>  <br>
+                <textarea name="address" id="address" placeholder="enter your address" rows="10" cols="60" ></textarea>  <br><br>
+
+
+                <label for="">enter your dob</label>
+                <input type="date" name="dob" id="">  <br> <br>
+
+
+                <label for="">select any one course</label><br><br>
+
+                <select name="course" id="">
+
+                    <option value="">select one course</option>
+                    <option value="java">Java Fullstack</option>
+                    <option value="python">Python Fullstack</option>
+                    <option value="mern">MERN stack</option>
+
+                </select>
+
+                <br><br>
+
+
+                <button type="submit"> register </button>
+                <button type="reset">reset value</button>
+                <button disabled="disabled">disable</button>
+            </fieldset>
+            
+        </form>
+        
+    </body>
+    </html>
