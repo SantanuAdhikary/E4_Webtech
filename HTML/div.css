@@ -1,0 +1,34 @@
+
+#nav{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+}
+
+#main{
+    height: 250px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section{
+    height: calc(100vh - 330px );
+    background-color: brown;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
