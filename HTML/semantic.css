@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    background-color: #212121;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > ul{
+    display: flex;
+    gap:25px;
+    list-style: none;
+
+}
+
+ul > li{
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header{
+    height: 200px;
+    background-color: rgb(202, 195, 187);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+header > h1{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+}
+
+header > p{
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+}
+
+header > button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: orange;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+header > button:hover{
+  background-color: orangered;
+  transform: scale(1.05);
+
+}
+
+main{
+    height: 250px;
+    background: linear-gradient(to right , white,skyblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > figure{
+    height: 200px;
+    width: 300px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+figcaption{
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+section{
+    height: 220px;
+    background:linear-gradient(to left,yellow,orangered);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+summary{
+    font-size: 20px;
+}
+
+
+article{
+    height: 250px;
+    display: flex;
+}
+
+article > aside{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article > aside:nth-child(1)
+{
+    background-color: black;
+    color:white;
+}
+
+footer{
+    background-color: brown;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > h2{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color:white;
+    text-shadow: 1px 2px 3px black;
+}
+
+
+span{
+  
+    font-size: 40px;
+    font-style: italic;
+    color: red;
+  
+}
