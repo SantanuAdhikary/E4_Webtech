@@ -1,0 +1,51 @@
+
+/* Tagname Selector */
+
+h1{
+    color:red;
+}
+
+/* Id Selector */
+
+#para1{
+    color:blue;
+}
+
+/* class selector */
+
+.card{
+
+    background-color: skyblue;
+    height: 200px;
+    width: 300px;
+}
+
+
+.box{
+    background-color: bisque;
+    height: 150px;
+    width: 150px;
+}
+
+
+/* universal selector */
+
+
+*{
+    font-style: italic;
+}
+
+
+/* group selector */
+
+
+#para1 , h3
+{
+    text-decoration: underline;
+}
+
+
+.card ,  .box
+{
+    border-radius: 20px;
+}
