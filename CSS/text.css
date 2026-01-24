@@ -1,0 +1,61 @@
+
+header{
+
+    background-color: antiquewhite;
+    height: 250px;
+    width: 500px;
+}
+
+main{
+    background-color: cadetblue;
+    height: 300px;
+    width: 600px;
+}
+
+/* decendant selector */
+
+header h1{
+    text-align: center;
+}
+
+header p{
+    font-size: 21px;
+    font-style: italic;
+}
+
+
+/* direct child selector */
+
+main > p{
+   background-color: yellow;
+}
+
+main > article{
+
+    background-color: lightgray;
+}
+
+
+section > ul >  #list5 + li{
+    background-color: green;
+}
+
+
+/*  pseudo class selector  */
+
+
+header > button:hover{
+    background-color: orangered;
+}
+
+
+
+section > button:active{
+    background-color: green;
+}
+
+
+section > ul > li:nth-child(3)
+{
+    background-color: red;
+}
