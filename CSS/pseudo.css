@@ -1,0 +1,78 @@
+
+
+header > h1{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    cursor:pointer;
+}
+
+header > p{
+    font-size: 21px;
+    text-align: justify;
+    text-indent: 100px;
+}
+
+header > button{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+header > button:hover{
+    background-color: orangered;
+}
+
+
+header > p::first-letter{
+    font-size: 40px;
+}
+
+header > p::first-line{
+    font-style: italic;
+}
+
+header > h1::after{
+    content: " !";
+    color:red;
+}
+
+
+header > h1::before{
+    content: "**";
+    color:green;
+}
+
+header > p::selection{
+    background-color: green;
+    color:white;
+}
+
+
+section > ol > li:nth-child(2n)
+{
+    background-color: pink;
+}
+section > ol > li:nth-child(2n+1)
+{
+    background-color: yellow;
+}
+
+
+ol > li::marker{
+    color:blue;
+}
+
+ol >li:nth-child(2n):hover{
+    background-color: red;
+}
+ol >li:nth-child(2n+1):hover{
+    background-color: red;
+}
+
+
+
+ol > li:nth-child(2n+1)::marker
+{
+    color:green;
+}
