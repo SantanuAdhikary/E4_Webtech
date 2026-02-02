@@ -1,0 +1,34 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 100px;
+    background-color: lightcoral;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > ul{
+    display: flex;
+     /* border: 3px solid green; */
+     gap:20px;
+ }
+
+nav > ul > li{
+    font-size: 19px;
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+nav > ul > li:hover{
+    color:white;
+}
