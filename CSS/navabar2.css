@@ -1,0 +1,45 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 100px;
+    background-color: #212121;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > ul{
+    display: flex;
+    gap:20px;
+}
+
+nav > ul > li{
+    text-transform: uppercase;
+    font-weight: bold;
+    list-style: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.right{
+    display: flex;
+    gap:20px;
+}
+
+.right > button{
+    padding: 7px 10px;
+    font-size: 17px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
