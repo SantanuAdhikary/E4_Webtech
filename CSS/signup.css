@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer > .inner{
+    width: 400px;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 4px 5px 6px rgba(0,0,0,0.8);
+}
+
+.inner > h1{
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    margin-bottom: 10px;
+}
+
+.inner > p:nth-child(2){
+  font-size: 20px;
+  font-style:italic;
+  margin-bottom: 10px;
+}
+
+.inner > form > input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    border: 1px solid orange;
+    outline: none;
+}
+
+.inner > form > label{
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+}
+
+.inner > form > input:focus{
+    border: 2px solid orangered;
+}
+
+form > button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    background-color: orangered;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+form > button:hover{
+    background-color: rgb(255, 91, 31);
+    text-shadow: 1px 2px 2px black;
+}
+
+.inner > #info{
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+  display: inline;
+  margin-right: 10px;
+}
+
+.inner > a{
+    font-size: 18px;
+    text-decoration: none;
+    color: blue;
+}
+
+input::placeholder{
+    color:orange;
+    font-size: 16px;
+    font-style: italic;
+}
