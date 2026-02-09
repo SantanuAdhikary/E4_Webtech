@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+
+    background-color: black;
+    background-image: url("https://i.pinimg.com/736x/60/97/23/6097239d56f9a0a872fafca5afa7162a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
