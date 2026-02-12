@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation 2</title>
+
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+
+         .outer{
+            height: 100vh;
+            background:linear-gradient(to right , red,yellow);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+         }
+
+         .inner{
+            height: 400px;
+            width: 400px;
+            border: 3px solid white;
+           border-radius: 50%;
+           animation: rotateBox 1s linear infinite;       
+        }
+        @keyframes rotateBox {    
+            from{    
+            }
+            to{
+                transform: rotate(350deg);
+            }
+        }
+        
+        .inner > .box
+        {
+            height: 100px;
+            width: 100px;
+            border: 3px solid white;
+            border-radius: 50%;
+
+         }
+
+          .inner2{
+            height: 400px;
+            width: 400px;
+            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+         }
+
+         .circle{
+            height: 40px;
+            /* border: 2px solid black; */
+            width: 40px;
+            border-radius: 50%;
+
+            animation: up_down 2s ease-in infinite alternate;
+         }
+
+         #c1{
+            background-color: red;
+         }
+         #c2{
+            background-color: blue;
+            animation-delay: 0.1s;
+         }
+         #c3{
+            background-color: green;
+            animation-delay: 0.2s;
+        }
+        #c4{
+            background-color: brown;
+            animation-delay: 0.3s;
+        }
+        #c5{
+            background-color: white;
+            animation-delay: 0.4s;
+         }
+
+         @keyframes up_down {
+            
+            from{
+                transform: translateY(-70px);
+            }
+            to{
+                transform: translateY(70px);
+            }
+         }
+    </style>
+</head>
+<body>
+       <div class="outer">
+             <div class="inner">
+                  <div class="box"></div>
+
+                </div>
+            <div class="inner2">
+
+                <div class="circle" id="c1"></div>
+                <div class="circle" id="c2"></div>
+                <div class="circle" id="c3"></div>
+                <div class="circle" id="c4"></div>
+                <div class="circle" id="c5"></div>
+            </div>
+       </div>
+</body>
+</html>

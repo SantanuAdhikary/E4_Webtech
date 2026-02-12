@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation 1</title>
+
+    <style>
+          *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+          }
+
+          .outer{
+            height: 100vh;
+            background: linear-gradient(skyblue,white);
+            display: flex;
+            justify-content: center;
+            align-items: center;       
+          }
+          .inner{
+            height: 200px;
+            width: 400px;
+            background-color: black;
+            border-radius: 15px;
+
+            animation: disco 1s ease-in infinite alternate;
+          }
+
+        @keyframes disco {    
+            from{
+            }
+            to{
+                background-color: red;
+                border-radius: 20%;
+                transform: translateY(-200px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+         <div class="inner">
+
+         </div>
+    </div>
+</body>
+</html>
