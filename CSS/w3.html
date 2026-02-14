@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+          *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+          }
+
+          .outer{
+            height: 100vh;
+            background:linear-gradient(to right,black,red,black);
+            color:white;
+          }
+
+          .outer > nav{
+            height: 12vh;
+            /* background-color: green; */
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            align-items: center;
+          }
+
+          .right > ul{
+            display: flex;
+            gap:15px;
+          }
+          ul > li{
+            font-size: 18px;
+            font-weight: bold;
+            list-style: none;
+            text-transform: uppercase;
+            letter-spacing: 1.06px;
+          }
+
+          .right{
+            display: flex;
+            gap:20px;
+            align-items: center;
+          }
+
+          .right > button{
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            background-color: cadetblue;
+            font-weight: bold;
+            text-transform: capitalize;
+          }
+
+          main{
+            /* background-color: white; */
+            height: 88vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:25px;
+          }
+
+          section{
+            display: flex;
+            gap:20px;
+          }
+
+          section > span{
+            display: block;
+            height: 40px;
+            width: 40px;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+
+          span:hover{
+            background-color: black;
+            transform: scale(1.04);
+          }
+
+          main > h1{
+            letter-spacing: 1.8px;
+            font-size: 46px;
+            text-shadow: 2px 3px 3px black;
+          }
+
+          main > p{
+            font-size: 18px;
+            font-style: italic;
+            letter-spacing: 1.3px;
+            text-align: center;
+          }
+
+          .buttons > button{
+            padding: 15px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: capitalize;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+          }
+    </style>
+</head>
+<body>
+    <div class="outer">
+         <nav>
+             <h1>webtech</h1>
+
+             <div class="right">
+                  <ul>
+                      <li>home</li>
+                      <li>about</li>
+                      <li>contact</li>
+                      <li>blog</li>
+                  </ul>
+
+                  <button>get info</button>
+             </div>
+         </nav>
+
+         <main>
+                 <section>
+                      <span>f</span>
+                      <span>t</span>
+                      <span>in</span>
+                      <span>x</span>
+                 </section>
+
+                 <h1>Web Design Development <br>Company and Digital Agency</h1>
+                 <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Perferendis, repudiandae. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                 <div class="buttons">
+
+                     <button>let't talk</button>
+                     <button>our services</button>
+                 </div>
+         </main>
+    </div>
+</body>
+</html>
