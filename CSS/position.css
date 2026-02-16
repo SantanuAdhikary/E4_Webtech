@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background:linear-gradient(to right top,red,black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer > .inner{
+    height: 80%;
+    width: 80%;
+    background: linear-gradient(skyblue,white);
+
+
+    position: relative;
+
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color:white;
+    letter-spacing:1px;
+    text-shadow: 2px 2px 3px black;
+}
+.inner > #box1{
+    height: 60px;
+    width: 60px;
+    background-color: orangered;
+    
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+
+}
+.inner > #box2{
+    height: 70px;
+    width: 70px;
+    background-color: green;
+   position: absolute;
+   bottom: 0px;
+    
+}
+.inner > #box3{
+    height: 80px;
+    width: 80px;
+    background-color: pink;
+    position: absolute;
+    right: 0;
+ 
+   
+}
+.inner > #box4{
+    height: 90px;
+    width: 90px;
+    background-color: lightslategray;
+    position: absolute;
+    
+}
+.inner > #box5{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+.outer2{
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+    margin: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 70%;
+    background-color: red;
+}
+.inner2{
+    height: 70%;
+    width: 70%;
+    background-color: white;
+    position: relative;
+
+}
+
+.card1{
+    height: 80px;
+    width: 80px;
+    background-color: orange;
+
+    position: absolute;
+
+    top:10px;
+    left:20px;
+}
+.card2{
+    height: 80px;
+    width: 80px;
+    background-color: black;
+}
