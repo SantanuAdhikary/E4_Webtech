@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background: linear-gradient(to right top,red,black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer > .inner{
+    height: 450px;
+    width: 450px;
+    background: linear-gradient(to right,white,skyblue);
+    border-radius: 20px;
+    box-shadow: 3px 4px 6px black;
+    position: relative;
+}
+
+.drinks{
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.discount{
+    position: absolute;
+    height: 200px;
+    bottom: 0px;
+    z-index: 2;
+    left:25px;
+
+    transition: all 1s ease-in;
+}
+
+.burger{
+    position: absolute;
+    bottom: 0px;
+   
+    height: 370px;
+}
+
+
+.discount:hover{
+    transform: rotate(360deg);
+}
+
+
+/* https://i.pravatar.cc/150 */
