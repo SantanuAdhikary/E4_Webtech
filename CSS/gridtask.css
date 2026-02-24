@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background: linear-gradient(to right top,red,yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+.outer > .inner{
+    height: 80%;
+    width: 80%;
+    /* background-color: white; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+}
+
+.inner > .box{
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: top;
+    transition: all 1s ease-in;
+    
+}
+
+.box:hover{
+    background-position: center;
+}
+
+
+.box > h1{
+    color:white;
+    text-shadow: 2px 2px 4px black;
+    letter-spacing: 2px;
+}
+
+.inner > #box1{
+    grid-row: span 2;
+    background-image: url("https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg");
+}
+
+#box2{
+    background-image: url("https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg");
+}
+
+#box3{
+    background-image: url("https://images.pexels.com/photos/158028/bellingrath-gardens-alabama-landscape-scenic-158028.jpeg");
+}
+
+.inner > #box4{
+    grid-column: span 2;
+    background-image: url("https://images.pexels.com/photos/366283/tianjin-twilight-city-scenery-366283.jpeg");
+}
+
+#box5{
+    background-image: url("https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg");
+}
+#box6{
+    background-image: url("https://images.pexels.com/photos/1322185/pexels-photo-1322185.jpeg");
+}
+#box7{
+    background-image: url("https://images.pexels.com/photos/414181/pexels-photo-414181.jpeg");
+}
