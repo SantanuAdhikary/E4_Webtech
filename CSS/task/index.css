@@ -1,0 +1,154 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 90px;
+    /* background-color: #07070a; */
+    width: 100%;
+    position: fixed;
+    top:0;
+     background: linear-gradient(black,rgb(137, 0, 0));
+    color:#F2D0A4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > h1{
+    /* color:orangered; */
+    letter-spacing: 1.3px;
+}
+
+.right{
+  display: flex;
+  gap:25px;
+}
+
+.right > a{
+    color:#f7f7ff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    text-decoration: none;
+}
+
+.right > a:hover{
+    color:orangered;
+}
+
+main{
+    margin-top: 90px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+    background: linear-gradient(rgb(137, 0, 0),black);
+    color:white;
+}
+
+main > h1{
+    font-size: 50px;
+}
+
+main >p{
+    font-size: 20px;
+}
+
+main > button{
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #36393b;
+    color:white;
+}
+
+section{
+    height: 270px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    background: linear-gradient(black,rgb(137, 0, 0));
+   
+
+}
+
+section > .card{
+    background-color: #f7f7ff;
+    border-radius: 20px;
+    height: 200px;
+    width: 350px;
+    box-shadow: 3px 5px 6px rgba(0,0,0,0.7);
+    padding: 20px ;
+    text-align: center;
+    overflow: auto;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.04) translateY(-10px) ;
+    box-shadow: 3px 5px 6px rgba(0,0,0,1);
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.card > p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.card > img{
+    height: 100px;
+}
+
+article{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(137, 0, 0),black);
+    color:white;
+}
+
+article > button{
+     padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #36393b;
+    color:white;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p{
+    font-size: 18px;
+    font-weight: bold;
+}
