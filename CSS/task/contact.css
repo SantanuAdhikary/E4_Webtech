@@ -1,0 +1,112 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60vh 40vh;
+    background-image: url("https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg");
+    background-size: cover;
+}
+
+header{
+    /* border: 2px solid; */
+    grid-column: span 3;
+}
+
+nav{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+}
+nav > h1{
+    letter-spacing: 1.3px;
+}
+nav > .navlink{
+  display: flex;
+  gap:25px;
+}
+.navlink > a{
+    color:#f7f7ff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    text-decoration: none;
+}
+
+.left{
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.left > iframe{
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+}
+.middle{
+   display: flex;
+   color:white;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:10px;
+}
+.right{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    color:white;
+}
+
+.right > form{
+    width: 80%;
+    /* background-color: red; */
+}
+
+form > input{
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 6px;
+}
+form > textarea{
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+form > button{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(24, 24, 80);
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+
+form > button:hover{
+    background-color: rgb(32, 32, 145);;
+}
