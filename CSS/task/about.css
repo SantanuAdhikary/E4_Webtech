@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    background: linear-gradient(to right,red,black);
+    position: relative;
+}
+
+header > .box{
+    height: 200px;
+    width: 85vw;
+    background-color: black;
+    position: absolute;
+    left:50%;
+    top:70%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+
+header > img{
+    position: absolute;
+    z-index: 1;
+    height: 45%;
+    left:150px;
+    top:170px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.6);
+}
+
+.about{
+    height: 400px;
+    width: 500px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    padding: 20px 40px;
+    position: absolute;
+    top:141px;
+    right:70px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.about > h1{
+    text-transform: capitalize;
+}
+
+.about > p{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about > button{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    color:white;
+    background-color: #555;
+    cursor: pointer;
+}
+
+.about > button:hover{
+    background-color: #666;
+}
+
+
+nav{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+}
+nav > h1{
+    letter-spacing: 1.3px;
+}
+nav > .navlink{
+  display: flex;
+  gap:25px;
+}
+.navlink > a{
+    color:#f7f7ff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    text-decoration: none;
+}
+
+footer{
+    height: 45vh;
+    background: linear-gradient(to right top,red,black);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card{
+    height: 200px;
+    width: 350px;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-color: #f4f4f4;
+    padding:10px 20px ;
+}
+
+.card > img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-left: 3px solid green ;
+    border-right: 3px solid black ;
+    border-bottom: 3px solid red ;
+    border-top: 3px solid red ;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:-40px;
+}
