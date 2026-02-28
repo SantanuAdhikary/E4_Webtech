@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+<style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+
+         nav{
+            height: 100px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+
+         }
+
+         nav > ul {
+              display: flex;
+              gap:25px;
+         }
+
+         ul > li{
+            list-style: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            cursor: pointer;
+            position: relative;
+         }
+
+         ul > li::after{
+            content: "";
+            height: 4px;
+            width: 0%;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0; 
+            transition: all 0.5s ease-in;
+            
+         }
+
+         
+
+         li:hover::after{
+            width: 100%;
+         }
+
+        
+         main{
+            height: 250px;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+         main > h1{
+            font-size: 60px;
+            letter-spacing: 5px;
+            border-right: 10px solid black;
+            animation: textanimation 4s steps(46) infinite alternate ;
+            overflow: hidden;
+            white-space: nowrap;
+         }
+
+         @keyframes textanimation {
+            from{
+                width: 0;
+            }
+            to{
+                  width: 30ch;
+            }
+         }
+
+         
+         footer{
+            height: calc(100vh - 350px);
+            background-color: orangered;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+         footer > .ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: white;
+            animation: up_down 5s ease-in infinite alternate;
+         }
+
+
+         @keyframes up_down {
+            0%{
+                   transform: translateY(-180px);
+                   opacity: 0;
+                }
+                
+                20%{
+                    transform: translate(0,0);
+                    opacity: 1;
+                }
+                70%{
+                    transform: translate(0,0);
+                    opacity: 1;
+                }
+                
+                100%{
+                    
+                    transform: translateY(180px);
+                    opacity: 0;
+            }
+         }
+
+       
+         ::-webkit-scrollbar{
+            display: none;
+         }
+    </style>
+    
+</head>
+<body>
+    <nav>
+         <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+         </ul>
+    </nav>
+
+
+    <main>
+         <h1> welcome to webtech session</h1>
+    </main>
+
+    <footer>
+          <div class="ball"></div>
+    </footer>
+    
+</body>
+</html>
