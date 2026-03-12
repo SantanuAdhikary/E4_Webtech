@@ -37,4 +37,18 @@ student(()=>{
 
 student(function(){
     console.log("i am wathing ipl")
-})
+});
+
+// ! IIFE (Immediate Invoke Function Expression)
+
+(function()
+{
+    console.log("i am iife function")
+})();
+
+
+(function(a,b)
+{
+    console.log("i am another iife function")
+    console.log(a+b)
+})(10,20);
