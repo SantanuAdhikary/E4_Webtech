@@ -132,3 +132,91 @@ console.log(str2.lastIndexOf('a'))        // 4
 // it is used to merge two or more than two strings and it will return one new string.
 
 console.log(str.concat(" ",str2 , "?"))
+
+
+// ! 7. includes()
+
+// it is used to know any string is present or not inside another string.
+// it will return boolean
+
+let str3 = "good evening"
+
+console.log(str3.includes("good"))
+console.log(str3.includes("morning"))
+
+// ! 8. replace() 
+
+// replace method is used to replace one string with another string.
+// it will replace only the first string
+
+console.log(str3.replace("evening","morning"))
+
+let aboutMe = "I am from bangalore, I love bangalore. bangalore is beautiful"
+
+// ! 9. replaceAll()
+
+// this method will replace all the occurances of the given string.
+
+console.log(aboutMe.replaceAll("bangalore","chennai"))
+
+
+// ! 10. slice()
+
+// it is used to extract one part of any string. 
+
+// it takes two parameters(startIndex, endIndex)
+
+// it will not include the end index value.
+
+// we can pass one parameter also, that will be consider as startIndex. from that startindex it will extract till the end of the string.
+
+// here we can give negative value also. last index is consider as -1.
+
+console.log(str3.slice(0,4))
+console.log(str3.slice(5))
+console.log(str3.slice(-7,-3))
+console.log(str3.slice(-7))
+console.log(str3.slice(4,0)) 
+console.log(str3.slice(-1,-4)) 
+
+//todo:  how to remove last character
+
+      console.log(str3.slice(0,-1)) 
+
+
+// ! count vowels 
+
+let sentence = "Setback for Mahagathbandhan in Bihar as 4 MLAs skip voting in Rajya Sabha polls"
+
+let updatedSentence = sentence.toLowerCase();
+
+console.log(updatedSentence)
+let count = 0 ;
+for(let i=0 ; i<updatedSentence.length;i++)
+{
+      let ch = updatedSentence.charAt(i);
+      if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+            count++;
+}
+
+console.log(`vowel present ${count} times`)
+
+
+// ! check string is pallindrome or not 
+
+let str4 = "malayalam"
+
+let revStr4 = ""
+
+for(let i=str4.length-1 ; i>=0 ; i--)
+{
+      revStr4 += str4[i]
+}
+
+console.log(revStr4)
+
+if(str4 == revStr4)
+      console.log("it is palindrome")
+else
+      console.log("it is not palindrome")
+
