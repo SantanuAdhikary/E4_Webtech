@@ -220,3 +220,76 @@ if(str4 == revStr4)
 else
       console.log("it is not palindrome")
 
+
+
+// ! 11. substring()
+
+// it is used to extract part of string and return new string
+
+// it takes two parameter(startIndex, endIndex), it does not include endIndex value. 
+
+// it can not take negative. (if we give negative that will be considerd as 0 )
+
+// in this method if we are passing start and end index value rightside to leftside, it will swap that and provide the output. 
+
+let news = "India won the worldcup";
+console.log(news.length)
+
+console.log(news.substring(0,5))
+console.log(news.substring(6))
+console.log(news.substring(-10))
+console.log(news.substring(5,0))
+
+
+// ! 12. split()
+
+// it is used to convert any string into array
+
+let sname = "miller";
+console.log(sname.split(""))
+
+let sen = "we live in chennai";
+console.log(sen.split(""))
+console.log(sen.split(" "))
+console.log(sen.split("e"))
+console.log(sen.split())
+
+
+//console.log(String.fromCharCode(65)) 
+
+
+
+
+// ! remove special character 
+
+// input : S@nta#u! 
+// output : Sntau
+
+
+let removeCharacter=(str)=>{
+
+      let res = "";
+      for(let i=0 ; i<str.length ;i++)
+      {
+            let ch = str[i];
+            if(ch>='0' && ch<='9' || 
+                ch>='a' && ch<='z' || 
+                ch>='A' && ch<='Z')
+                {
+                  res+=ch;
+                }
+      }
+
+      return res;
+}
+
+
+console.log(removeCharacter("S@anta#nu!"))
+
+
+// ! 13. charCodeAt()
+
+// it is used to know the ASCII value of the given character.
+
+let ch = 'a'
+console.log(ch.charCodeAt(0))
