@@ -28,6 +28,8 @@ console.log(student)
 
 console.log("student name is : ",student.sname)
 console.log("student age is : ",student.age)
+console.log("student city is : ",student.address.city)
+student.work();
 
 
 // ! how to modify value 
@@ -109,3 +111,71 @@ console.log(pen)
 
 console.log(Object.isFrozen(pen))
 console.log(Object.isFrozen(emp))
+
+
+// ! 6. Object.seal()
+
+// it is similar to freeze method , we can't add or delete any property but here we can modify the element.
+
+let laptop ={
+    brand : "hp",
+    price : 72000
+}
+console.log("before seal")
+console.log(laptop)
+
+console.log("after seal")
+Object.seal(laptop);
+
+laptop.color = "black"     // add is not possible
+delete laptop.price       // delete is not possible
+laptop.price = 80000     //! we can modify
+
+console.log(laptop)
+
+
+// ! 7. Object.isSealed()
+
+// it is used to check any object is sealed or not. 
+// it will return boolean value.
+
+console.log(Object.isSealed(laptop))
+console.log(Object.isSealed(student))
+
+
+// ! 8. Object.assign()
+
+// it is used to combine two or more than two objects and it will return one new object.
+
+//? syntax:    Object.assign(target, source1, source2 , source3....)
+
+let ob1 = {
+    name : "board",
+    color:"white"
+}
+
+let ob2 = {
+    price : 5000,
+    height:"50m",
+    width : "200m"
+}
+
+let ob3 = Object.assign({},ob1,ob2)
+console.log(ob3)
+console.log(ob2)
+console.log(ob1)
+
+
+
+// ! 9. hasOwnProperty()
+
+// used to check property is present or not.
+// it will return boolean value.
+
+console.log(ob2.hasOwnProperty("price"))
+console.log(ob2.hasOwnProperty("location"))
+
+
+
+
+
