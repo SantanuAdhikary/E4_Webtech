@@ -52,3 +52,47 @@ student(function(){
     console.log("i am another iife function")
     console.log(a+b)
 })(10,20);
+
+
+
+// !  calculator by using higher order function 
+
+console.log("calculator")
+
+let add =(a,b)=>{
+  console.log("addition is : ",(a+b))
+}
+
+let sub =(a,b)=>{
+    console.log("subtraction is : ",(a-b))
+}
+
+let mul =(a,b)=>{
+    console.log("multiplication is : ",(a*b))
+}
+
+let div=(a,b)=>{
+    console.log("division is : ",(a/b))
+}
+
+
+let calculator =(a,b,operate)=>{
+
+    operate(a,b)  
+}
+
+let option = 3 ; 
+
+switch(option)
+{
+    case 1 : calculator(400,100,add)
+            break;
+    case 2 : calculator(300,200,sub)
+            break;
+    case 3 : calculator(200,100,mul)
+            break;
+    case 4 : calculator(200,50,div)
+            break;
+}
+
+

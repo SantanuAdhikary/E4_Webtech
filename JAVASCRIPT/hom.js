@@ -94,3 +94,20 @@ console.log(unsortedArr)
 unsortedArr.sort((a,b)=> b-a)
 console.log(unsortedArr)
 
+//todo: add 100 then find greater than 130 then add those element
+
+let numbers = [10,20,30,40,50];
+
+let finalAns = numbers.map(ele=> ele+100).filter(ele=> ele > 130).reduce((acc,ele)=> acc+ele)
+
+console.log(finalAns)
+
+//! note : accumulator value by default the first element of the array , but we can assign the value.
+
+let res = numbers.reduce((acc,ele)=>{
+    console.log(acc)
+     return acc + ele;
+},1000)
+
+console.log(res)
+
