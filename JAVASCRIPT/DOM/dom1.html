@@ -16,6 +16,29 @@
             background-color: yellow;
             
           }
+
+          main{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+          }
+
+          .profileCard{
+             height: 200px;
+             width: 300px;
+             background-color: white;
+             border-radius: 15px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             box-shadow: 3px 4px 6px rgba(0,0,0,0.7);
+             cursor: pointer;
+             transition: all 0.4s ease-in;
+          }
+
+          .profileCard:hover{
+            transform: scale(1.05);
+          }
     </style>
 </head>
 <body>
@@ -35,6 +58,12 @@
          </div>
     </nav>
 
+
+    <main>
+        <div class="card">card 1</div>
+        <div class="card">card 2</div>
+        <div class="card">card 3</div>
+    </main>
 
 
     <script src="./dom1.js"></script>

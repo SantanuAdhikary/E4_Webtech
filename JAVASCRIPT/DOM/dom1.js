@@ -45,3 +45,36 @@ nav[0].style.display = "flex"
 nav[0].style.justifyContent = "space-between "
 nav[0].style.alignItems = "center "
 nav[0].style.height = "100px "
+
+
+
+let main = document.getElementsByTagName("main")
+console.log(main)
+
+
+main[0].style.backgroundColor = "lightpink"
+main[0].style.height = "250px"
+
+// ! targetting elements by class name 
+
+let cards = document.getElementsByClassName("card")
+console.log(cards)
+
+console.log(cards[0])
+console.log(cards[1])
+console.log(cards[2])
+
+// ! how to know what are the class added for any element
+
+console.log(cards[0].classList);
+
+// ! how to add class 
+
+
+cards[0].classList.add("profileCard")
+cards[1].classList.add("profileCard")
+cards[2].classList.add("profileCard")
+
+//! how to remove class
+
+cards[1].classList.remove("profileCard")
