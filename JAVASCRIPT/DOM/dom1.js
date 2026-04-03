@@ -78,3 +78,67 @@ cards[2].classList.add("profileCard")
 //! how to remove class
 
 cards[1].classList.remove("profileCard")
+
+
+
+//!  targetting section
+
+let section = document.getElementsByTagName("section")
+
+console.log(section)
+
+section[0].style.backgroundColor = "orangered"
+section[0].style.height = "400px "
+
+console.log(section[0].innerText)
+console.log(section[0].innerHTML)
+
+console.log(nav[0].innerText)
+console.log(nav[0].innerHTML)
+
+let box = document.getElementById("box")
+
+console.log(box)
+
+box.innerHTML = "<h2>how are you</h2>"
+box.innerText = "i am fine"
+
+
+let topic = document.getElementById("topic")
+
+topic.innerText = "welcome to DOM session"
+
+
+
+
+// ! create element 
+
+let div = document.createElement("div");
+div.classList.add("circle");
+div.innerHTML = "<h2> round </h2>"
+
+section[0].prepend(div)
+section[0].before(div)
+section[0].after(div)
+section[0].append(div)
+
+
+//! create element 
+let footer = document.createElement("footer")
+
+//! writing inside the element 
+footer.innerHTML = "<p> dom learing by javascript</p>"
+
+// ! apply css 
+footer.style.height="80px"
+footer.style.backgroundColor="black"
+footer.style.color="white"
+footer.style.display="flex"
+footer.style.justifyContent="center"
+footer.style.alignItems="center"
+
+// ! target section
+
+let sec = document.getElementsByTagName("section")
+
+sec[0].after(footer)
