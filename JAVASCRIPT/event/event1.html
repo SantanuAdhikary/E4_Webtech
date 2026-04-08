@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse events</title>
+
+    <style>
+          .card{
+            height: 200px;
+            width: 300px;
+            border: 3px solid black;
+          }
+          .card2{
+            height: 200px;
+            width: 300px;
+            border: 3px solid black;
+          }
+          .box1 , .box2{
+            height: 200px;
+            width: 300px;
+            border: 3px solid black;
+          }
+    </style>
+</head>
+<body>
+    
+    <h1> mouse events</h1>
+
+    <button onclick="wish()">wish</button>
+
+    <div class="card">
+
+    </div>
+    <button onclick="changeColor()">change color</button>
+    <button onclick="changeColor2()">change color2</button>
+
+
+    <div class="card2" ondblclick="printMsg()">
+          <h2> card 2</h2>
+    </div>
+
+    <div class="box1">
+        <h2>hello everyone</h2>
+    </div>
+    <div class="box2" ondblclick="copyText()"></div>
+
+    <script src="./event1.js"></script>
+</body>
+</html>
