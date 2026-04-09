@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background task</title>
+
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+
+         .outer{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            gap:50px;
+            padding-bottom: 50px;
+         }
+
+         .outer > button{
+            padding: 40px;
+            font-weight: bold;
+            font-size: 17px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            border-radius: 50%;
+            border: none;
+            box-shadow: 4px 5px 5px black;
+            cursor: pointer;
+            background: linear-gradient(to right top,white,skyblue);
+         }
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+          
+        <button id="btn1" onclick="convertRed()">red</button>
+        <button id="btn2" onclick="convertGreen()">green</button>
+        <button id="btn3" onclick="convertBlack()">black</button>
+        <button id="btn4" onclick="convertBlue()">blue</button>
+        <button id="btn5" onclick="convertWhite()">white</button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
