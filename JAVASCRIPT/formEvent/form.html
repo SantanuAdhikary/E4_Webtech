@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> form event </title>
+
+    <style>
+          *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+          }
+          h1{
+            text-align: center;
+          }
+
+          form{
+            margin: auto;
+            width: 350px;
+            background-color: bisque;
+            padding: 20px 40px;
+            margin-block:20px;
+            border-radius: 20px;
+            box-shadow: 2px 4px 6px rgba(0,0,0,0.8);
+          }
+
+          form > input{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+
+          }
+
+          form > button{
+            width: 100%;
+            background-color: #555;
+            color:white;
+            font-weight: bold;
+            letter-spacing: 1.3px;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            border: none;
+          }
+
+          form > label{
+            font-weight: bold;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+          }
+
+          #form2{
+            background-color: brown;
+            color:white;
+          }
+    </style>
+</head>
+<body>
+
+
+    <h1> form event </h1>
+    
+
+    <form action="">
+        <label for="">name</label>
+        <input type="text" placeholder="enter your name" id="userName">
+        <label for="">password</label>
+        <input type="text" placeholder="enter your password" id="userPass">
+        <button>register</button>
+    </form>
+
+    <form action="" id="form2">
+        <label for="">first number</label>
+        <input type="text" placeholder="enter first number" id="num1" required>
+        <label for="">second number</label>
+        <input type="text" placeholder="enter second number" id="num2" required>
+        <button>add</button>
+    </form>
+
+    <div class="output">
+
+    </div>
+
+
+
+   
+
+    <script src="./form.js"></script>
+    
+</body>
+</html>
