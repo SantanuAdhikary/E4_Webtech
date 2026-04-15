@@ -1,0 +1,80 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(to right top,rgb(183, 0, 70),white);
+}
+
+nav{
+    height: 100px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+nav > img{
+    height: 80px;
+}
+
+nav > h1{
+    color:rgb(73, 3, 73);
+    text-shadow: 1px 4px 2px white;
+}
+
+main{
+    padding: 30px;
+}
+
+main > input{
+    padding: 20px;
+    width: 350px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    border-radius: 15px;
+    border: none;
+    outline:none;
+    margin-bottom: 30px;
+}
+
+main > input:active{
+    border: 2px solid rgb(108, 6, 108);
+    
+}
+
+main > button{
+    padding: 20px;
+    width: 140px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+    background:linear-gradient(to right top,rgb(55, 1, 55),white);
+    color:white;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+main > button:hover{
+      background:linear-gradient(rgb(55, 1, 55),white);
+}
+
+ul > li{
+    height: 150px;
+    background-color: white;
+    width: 350px;
+    margin-bottom: 25px;
+    padding: 15px;
+    list-style: none;
+    border-radius: 15px;
+    font-size: 25px;
+    letter-spacing: 1.2px;
+}
