@@ -77,4 +77,20 @@ ul > li{
     border-radius: 15px;
     font-size: 25px;
     letter-spacing: 1.2px;
+    position: relative;
+}
+
+
+.deleteBtn{
+    padding: 10px;
+    position: absolute;
+    right:10px;
+    bottom:10px;
+    background-color: red;
+    color:white;
+    border: none;
+    font-weight: bold;    
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
 }
