@@ -7,7 +7,7 @@
 .outer{
     height: 100vh;
     display: flex;
-    background: linear-gradient(to top right,skyblue,white);
+    /* background: linear-gradient(to top right,skyblue,white); */
 }
 
 .left{
@@ -53,12 +53,17 @@ form > button{
     border:none;
     border-radius: 10px;
     letter-spacing: 1.3px;
-    background-color: #ccc;
+    background-color: #0e3b71;
     color:white;
     text-shadow:  3px 4px 5px rgba(0,0,0,0.7);
     cursor: pointer;
     
 }
+
+form > button:hover{
+    background-color: #0064E0;
+}
+
 .right{
     flex-basis: 50%;
     /* background: linear-gradient(to top right,skyblue,white); */

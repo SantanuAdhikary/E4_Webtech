@@ -7,7 +7,6 @@
 .outer{
     height: 100vh;
     display: flex;
-    background: linear-gradient(to top right,skyblue,white);
 }
 
 .right{
@@ -53,11 +52,15 @@ form > button{
     border:none;
     border-radius: 10px;
     letter-spacing: 1.3px;
-    background-color: #ccc;
+    background-color: #0064E0;
     color:white;
     text-shadow:  3px 4px 5px rgba(0,0,0,0.7);
     cursor: pointer;
     
+}
+
+form > button:hover{
+    background-color: #386296;
 }
 .left{
     flex-basis: 50%;
